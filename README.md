@@ -8,6 +8,8 @@ Both team captains have the same information, given in input.txt:
 - their "Happy_B" value (the same concept as Happy_A, but describing how happy they would be on Team B)
 - their "pick state" (0 if not already on a team, 1 if on Team A, 2 if on Team B)
 
+The ideal first pick candidate is determined by comparing the combined value of all of team A's candidates with the combined value of all of team B's candidates (with each candidate's value being their capacity * the "Happy" value of the team they're on), and maximizing the difference between the two.
+
 ### Input (input.txt):
 
 [number of contestants] (positive, even integer)
